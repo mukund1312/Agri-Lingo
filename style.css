@@ -46,7 +46,7 @@ header{
 }
 #text{
     position: absolute;
-    font-size: 3rem;
+    font-size: 4rem;
     color: #ffffff;
     top: 25%;
     text-shadow: 2px 2px 4px rgba(0, 0, 0,.2);
@@ -82,7 +82,7 @@ header{
     }
 .Parallax #back1 {
             width: 100%; 
-             height: 52.5%;
+             height: 70%;
             z-index: -1;
             
           }
@@ -110,14 +110,14 @@ body {
     color: #ffffff;
     font-size: 2em;
     text-transform: capitalize;
-    margin-top: 20rem;
+    margin-top: 30rem;
     
 }
 
 .sec p {
-
+    text-align: center;
     font-size: 1em;
-    color: white;
+    color: rgb(255, 255, 255);
     font-weight: 300;
 }
 .Parallax{
@@ -199,32 +199,41 @@ nav{
         }
     }
 }
-
-.icon_for_voice img {
-    max-width: 150px;
-    max-height: 150px;
+.more-info{
+    img{
+        margin-top: 35%;
+        width:100%;
+        object-fit: cover;
+        height: 11em;
+    }
+    .title{
+        margin-top: 35%;
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 1.25rem;
+    }
+    .desc{
+        color: #ffffff;
+        line-height: 1.5rem ;
+    }
 }
-.icon_for_camera img {
-    max-width: 180px;
-    max-height: 180px;
-}
-/* .icon_for_textProc img {
-    width: 10px;
-    height: 10px;
-} */
-.icon_for_translation img {
-    width: 170px;
-    height: 170px;
-}
-.Ficons{
-    display: flex;
-}
-.Ficons:nth-child(2){
-    transition-delay: 200ms;
-}
-.Ficons:nth-child(3){
-    transition-delay: 400ms;
-}
-.Ficons:nth-child(4){
-    transition-delay: 600ms;
+.features{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 3em;
+    margin-bottom: 8em;
+    img {
+        width: 25em;
+        } I
+.content{
+    text-align: right;
+    width: 25em;
+}}
+.features.left{
+    grid-template-areas: "left right";
+    img{
+        margin-top: 65%;
+        width: 18em;
+        grid-area: left;
+    }
 }
